@@ -4,17 +4,21 @@ int main (){
 	
 // x = (c - b) / a
 
-	int times;
+	int total_money;
 	
+	std::cout << "Please introduce and ammount of money:" << std::endl;
+	
+	std::cin >> total_money;
+	
+	int banknotes = 0;
 
-	std::cout << "Please introduce the number of times you want to repeat the sentence:" << std::endl;
-	
-	std::cin >> times;
-	
-	for (int i = 0; i < 10; i++) {
-		std::cout << "I will not talk in class" << std::endl;
-
+	while (total_money >= 50) {
+			total_money = total_money - 50;
+			banknotes = banknotes + 1;
 	}
+
+	std::cout << "Number of banknotes: " << banknotes << std::endl;
+
 
 	return 0;
 
