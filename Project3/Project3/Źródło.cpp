@@ -1,13 +1,18 @@
 #include <iostream>
-#include <cmath> 
+#include <array> 
 
 int main () {
 	
-	for (int i = 0; i <= 360; i++) {
-		std::cout << "Angle : " << i << " / sine = " << sin(i) << std::endl;
+	std::array<int, 10> data;
 
+	for (int i = 0; i < 10; i++) {
+		data[i] = i;
 	}
 
-	return 0;
+	for (int i = 0; i < 10; i++) {
+	std::cout << data[i] << std::endl;
 
+	}
+	
+	return 0;
 }
