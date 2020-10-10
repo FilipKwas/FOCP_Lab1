@@ -12,11 +12,15 @@ int main (){
 	
 	int banknotes = 0;
 
-	while (total_money >= 50) {
-			total_money = total_money - 50;
-			banknotes = banknotes + 1;
+	//while (total_money >= 50) {
+	//		total_money = total_money - 50;
+	//		banknotes = banknotes + 1;
+	// } 
+	
+	for ( banknotes = 0; total_money >= 50; banknotes++) { 
+		total_money = total_money - 50;
 	}
-
+	
 	std::cout << "Number of banknotes: " << banknotes << std::endl;
 
 
