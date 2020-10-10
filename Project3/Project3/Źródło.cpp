@@ -1,28 +1,12 @@
 #include <iostream>
+#include <cmath> 
 
-int main (){
+int main () {
 	
-// x = (c - b) / a
+	for (int i = 0; i <= 360; i++) {
+		std::cout << "Angle : " << i << " / sine = " << sin(i) << std::endl;
 
-	int total_money;
-	
-	std::cout << "Please introduce and ammount of money:" << std::endl;
-	
-	std::cin >> total_money;
-	
-	int banknotes = 0;
-
-	//while (total_money >= 50) {
-	//		total_money = total_money - 50;
-	//		banknotes = banknotes + 1;
-	// } 
-	
-	for ( banknotes = 0; total_money >= 50; banknotes++) { 
-		total_money = total_money - 50;
 	}
-	
-	std::cout << "Number of banknotes: " << banknotes << std::endl;
-
 
 	return 0;
 
